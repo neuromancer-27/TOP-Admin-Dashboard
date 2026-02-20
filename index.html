@@ -42,10 +42,12 @@
         <div class="upper">
           <div class="upper-left">
             <form class="search" action="./search.results.com" method="GET">
-              <button type="button" class="search-btn">
-                <img src="./assets/magnify.svg" alt="search-btn" width="20" />
-              </button>
-              <input type="search" name="search-bx" />
+              <div class="search-child">
+                <button type="button" class="search-btn">
+                  <img src="./assets/magnify.svg" alt="search-btn" width="20" />
+                </button>
+                <input type="search" name="search-bx" />
+              </div>
             </form>
           </div>
           <div class="upper-right">
@@ -53,7 +55,6 @@
               class="bell-icon"
               src="./assets/bell-ring-outline.svg"
               alt="notification bell"
-              width="20"
             />
             <img
               class="id-small"
@@ -66,122 +67,177 @@
 
         <div class="lower">
           <div class="lower-left">
-            <img
-              src="./assets/7 coisas que o clássico cyberpunk Neuromancer previu _ Turma do Fundão.jpeg"
-              alt="logo"
-              width="40"
-            />
-            <div>
-              <p>Hi there,</p>
-              <p>Neuromancer (@neuromance27)</p>
+            <div class="lower-left-items">
+              <img
+                class="id-big"
+                src="./assets/7 coisas que o clássico cyberpunk Neuromancer previu _ Turma do Fundão.jpeg"
+                alt="logo"
+              />
+              <div class="id-text">
+                <p class="upper-text">Hi there,</p>
+                <p class="lower-text">Neuromancer (@neuromance27)</p>
+              </div>
             </div>
           </div>
           <div class="lower-right">
-            <button type="button" class="action-btn">New</button>
-            <button type="button" class="action-btn">Upload</button>
-            <button type="button" class="action-btn">Share</button>
+            <div class="lower-right-items">
+              <button type="button" class="action-btn">New</button>
+              <button type="button" class="action-btn">Upload</button>
+              <button type="button" class="action-btn">Share</button>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="content">
-        <div class="your-projects">
-          <p>Your Projects</p>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
-          </div>
-          <div class="card">
-            <p class="title">Title</p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, placeat labore! Repellat, quae mollitia officia nam
-              nemo quos adipisci incidunt saepe harum, praesentium unde ex
-              dolores blanditiis vero quas. Ad?
-            </p>
-            <button type="button" class="card-btn">star</button>
-            <button type="button" class="card-btn">eye</button>
-            <button type="button" class="card-btn">share</button>
+        <div class="content-left">
+          <p class="project-title">Your Projects</p>
+          <div class="your-projects">
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-items">
+                <div class="card-itemsUp">
+                  <p class="title">Title</p>
+                  <p class="para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, placeat labore! Repellat, quae mollitia officia
+                    nam nemo quos adipisci incidunt saepe harum, praesentium
+                    unde ex dolores blanditiis vero quas. Ad?
+                  </p>
+                </div>
+                <div class="card-itemsDown">
+                  <div class="card-btn-container">
+                    <button type="button" class="card-btn">star</button>
+                    <button type="button" class="card-btn">eye</button>
+                    <button type="button" class="card-btn">share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="announcements">
-          <p>Announcements</p>
-          <div class="vertical-card">
-            <p class="title">Site Maintainance</p>
-            <p>Random text</p>
+        <div class="content-right">
+          <div class="announcements">
+            <p>Announcements</p>
+            <div class="vertical-card">
+              <p class="title">Site Maintainance</p>
+              <p>Random text</p>
 
-            <hr class="line-seperation" />
+              <hr class="line-seperation" />
 
-            <p class="title">Community Share Day</p>
-            <p>Random text</p>
+              <p class="title">Community Share Day</p>
+              <p>Random text</p>
 
-            <hr class="line-seperation" />
+              <hr class="line-seperation" />
 
-            <p class="title">Update Privacy Policy</p>
-            <p>Random text</p>
+              <p class="title">Update Privacy Policy</p>
+              <p>Random text</p>
 
-            <hr class="line-seperation" />
+              <hr class="line-seperation" />
+            </div>
           </div>
-        </div>
 
-        <div class="trending">
+          <div class="trending"></div>
           <p>Trending</p>
           <div class="vertical-card">
             <img class="logo" />logo
