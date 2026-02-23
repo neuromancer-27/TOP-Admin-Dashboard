@@ -21,26 +21,33 @@
   grid-template-rows: 10% auto;
   gap: 10px;
   border-right: 2px solid black;
+  /* justify-items: start; */
 }
 
 .sidebar .dashboard {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
 
+  font-size: 2rem; */
+
   font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
 }
 
 .dashboard .icon {
-  width: 10%;
+  width: 40%;
+  justify-self: end;
 }
 
 .sidebar .menu-container {
   display: grid;
   grid-template-columns: minmax(100px, 50%);
-  grid-template-rows: 1fr min-content;
+  grid-template-rows: min-content min-content;
   justify-content: center;
   gap: 50px;
 }
@@ -196,6 +203,7 @@
 }
 
 /* content */
+/* content-left */
 
 .content {
   display: grid;
@@ -212,7 +220,6 @@
 
 .content-left .project-title {
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .content-left .your-projects {
@@ -253,4 +260,77 @@
 .card-itemsDown {
   display: grid;
   justify-items: end;
+}
+
+/* content-right */
+
+.content .content-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 3rem 2rem 3rem 0;
+}
+
+.content .announcements {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 0.5rem;
+}
+
+.announcements h2 {
+  font-size: 1.2rem;
+}
+
+.announcements .vertical-card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.announcement {
+  padding: 0.5rem;
+}
+
+#bordered {
+  border-bottom: 1px solid #c4c3c3;
+}
+
+.announcement .title {
+  font-size: 1rem;
+}
+
+.announcement p {
+  font-size: 0.8rem;
+  color: #4e4e4e;
+}
+
+.content .trending {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 0.5rem;
+}
+
+.trending h2 {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+.trending .vertical-card {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.trending-elements {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 0.7rem;
+  align-items: center;
 }
